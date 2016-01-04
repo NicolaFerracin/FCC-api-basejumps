@@ -17,11 +17,6 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 // routes
 require('./app/routes.js')(app);
 
-// use express routing for pages refresh
-app.get('/*', function(req, res, next) {
-  // Just send the index.html for other files to support HTML5Mode
-  res.sendfile('/public/index.html', { root: __dirname });
-});
 
 // listen (start app with node server.js) ======================================
 app.listen(port);
