@@ -1,7 +1,7 @@
 {
-  "name"         : "Timestamp",
+  "name"         : "Request Header Parser Microservice",
   "version"      : "0.0.0",
-  "description"  : "Timestamp FCC basejump.",
+  "description"  : "Request Header Parser Microservice FCC basejump.",
   "main"         : "server.js",
   "author"       : "NicolaFerracin",
   "dependencies" : {
