@@ -1,7 +1,6 @@
 // set up ======================================================================
 var express  = require('express');
 var app      = express(); 								// create our app w/ express
-var cookieParser = require('cookie-parser');
 var morgan   = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
