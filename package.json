@@ -1,5 +1,5 @@
 {
-  "name"         : "Request Header Parser Microservice",
+  "name"         : "Parser",
   "version"      : "0.0.0",
   "description"  : "Request Header Parser Microservice FCC basejump.",
   "main"         : "server.js",
