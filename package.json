@@ -1,21 +1,13 @@
 {
-  "name"         : "Boilerplate",
+  "name"         : "Timestamp",
   "version"      : "0.0.0",
-  "description"  : "This is a basic boilerplate.",
+  "description"  : "Timestamp FCC basejump.",
   "main"         : "server.js",
   "author"       : "NicolaFerracin",
   "dependencies" : {
-    "passport" : "latest",
-    "passport-local" : "latest",
-    "express"         : "latest",
-    "mongoose"        : "latest",
     "morgan"          : "latest",
     "body-parser"     : "latest",
     "method-override" : "latest",
-    "connect-flash" : "latest",
-    "bcrypt-nodejs" : "latest",
-    "express-session": "latest",
-    "cookie-parser": "latest"
   },
   "engines": {
     "npm" : "latest"
