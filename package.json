@@ -1,7 +1,7 @@
 {
-  "name": "Parser",
-  "version": "0.0.0",
-  "description": "Request Header Parser Microservice FCC basejump.",
+  "name": "API-Basejump",
+  "version": "1.0.0",
+  "description": "5 FCC API basejumps.",
   "main": "server.js",
   "author": "NicolaFerracin",
   "dependencies": {
