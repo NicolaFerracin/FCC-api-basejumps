@@ -1,10 +1,17 @@
 // set up ======================================================================
 var express  = require('express');
 var app      = express(); 								// create our app w/ express
+var mongoose = require('mongoose'); 					// mongoose for mongodb
+var database = require('./database'); 			// load the database config
 var morgan   = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var port = process.env.PORT || 8080 // setting up the port
+var port = process.env.PORT || 8080; // setting up the port
+
+
+// configuration ===============================================================
+mongoose.connect(database.url); 	// connect to mongoDB database on modulus.io
+
 
 app.use(express.static(__dirname + '/public')); 		// set the static files location
 app.use(morgan('dev')); // log every request to the console
@@ -14,7 +21,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse applica
 app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
 
 // routes
-require('./app/routes.js')(app);
+require('./routes.js')(app);
 
 
 // listen (start app with node server.js) ======================================

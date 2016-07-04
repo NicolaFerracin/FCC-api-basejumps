@@ -1,17 +1,20 @@
 {
-  "name"         : "Parser",
-  "version"      : "0.0.0",
-  "description"  : "Request Header Parser Microservice FCC basejump.",
-  "main"         : "server.js",
-  "author"       : "NicolaFerracin",
-  "dependencies" : {
-    "morgan"          : "latest",
-    "body-parser"     : "latest",
-    "method-override" : "latest",
-    "express" : "4.13.3"
+  "name": "Parser",
+  "version": "0.0.0",
+  "description": "Request Header Parser Microservice FCC basejump.",
+  "main": "server.js",
+  "author": "NicolaFerracin",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "4.13.3",
+    "method-override": "latest",
+    "mongoose": "^4.5.3",
+    "morgan": "latest",
+    "multer": "^1.1.0",
+    "request": "^2.72.0"
   },
   "engines": {
-    "npm" : "latest"
+    "npm": "latest"
   },
   "scripts": {
     "start": "node server.js"
